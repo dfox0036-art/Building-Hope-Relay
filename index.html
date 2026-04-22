@@ -200,7 +200,18 @@
       font-size: 0.95rem;
       padding: 28px 0 40px;
     }
-
+      .hero-image {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 24px;
+  box-shadow: var(--shadow);
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  }
     @media (max-width: 800px) {
       .hero {
         padding: 36px 22px;
@@ -218,26 +229,13 @@
         padding-left: 24px;
       }
 
-      .hero-image {
-  width: 100%;
-  border-radius: var(--radius);
-  overflow: hidden;
-  margin-top: 24px;
-  box-shadow: var(--shadow);
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="hero-image">
-  <img src="Relaybackgroundv2.jpg" alt="Building Hope Relay Banner">
+  <img src="Relaybackgroundv2.png" alt="Building Hope Relay Banner">
 </div>
     <section class="hero">
       <div class="badge">Building Hope Relay</div>
