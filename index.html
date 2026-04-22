@@ -22,8 +22,7 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                  url('Relaybackground.JPG');
+     background: #f7f8fc;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -218,11 +217,28 @@
       .timeline-item {
         padding-left: 24px;
       }
+
+      .hero-image {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 24px;
+  box-shadow: var(--shadow);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="hero-image">
+  <img src="building-hope-relay.jpg" alt="Building Hope Relay Banner">
+</div>
     <section class="hero">
       <div class="badge">Building Hope Relay</div>
       <h1>Help Us Make a Difference In Our Community For Generations To Come</h1>
