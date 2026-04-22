@@ -88,7 +88,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1fr;
       gap: 24px;
       margin-top: 24px;
     }
@@ -137,6 +137,64 @@
       padding-left: 20px;
     }
 
+    .timeline-section h2 {
+      margin-bottom: 10px;
+    }
+
+    .timeline-intro {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 10px;
+      padding-left: 24px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #dbeafe;
+      border-radius: 999px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 28px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -1px;
+      top: 6px;
+      width: 18px;
+      height: 18px;
+      background: var(--accent);
+      border: 4px solid #dbeafe;
+      border-radius: 50%;
+    }
+
+    .timeline-content h3 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+
+    .timeline-content p {
+      margin: 0;
+      color: var(--text);
+    }
+
     .footer {
       text-align: center;
       color: var(--muted);
@@ -145,10 +203,6 @@
     }
 
     @media (max-width: 800px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
       .hero {
         padding: 36px 22px;
       }
@@ -156,16 +210,24 @@
       h1 {
         font-size: 2rem;
       }
+
+      .timeline {
+        padding-left: 20px;
+      }
+
+      .timeline-item {
+        padding-left: 24px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <section class="hero">
-      <div class="badge">Building Hope Relay </div>
+      <div class="badge">Building Hope Relay</div>
       <h1>Help Us Make a Difference In Our Community For Generations To Come</h1>
       <p class="subtitle">
-        The seats are filled every week at our current building, we need to expand our walls to make sure everyone has a seat to learn truth and grow in the Word. We need YOUR help to build new walls and minister to those who know Jesus and those who have not yet come to know Christ. Your donation helps bring this mission to life and will impact US personnel and Italians for generations.
+        The seats are filled every week at our current building, and we need to expand our walls to make sure everyone has a seat to learn truth and grow in the Word. We need your help to build new walls and minister to those who know Jesus and those who have not yet come to know Christ. Your donation helps bring this mission to life and will impact U.S. personnel and Italians for generations.
       </p>
       <a class="button" href="https://www.pledgeathon.io/c/relay-for-the-city-805be090/general" target="_blank" rel="noopener noreferrer">
         Donate Now
@@ -173,24 +235,25 @@
     </section>
 
     <section class="grid">
-
- <div class="card support-box">
-           <p>
+      <div class="card support-box">
+        <p style="text-align: center; margin-bottom: 20px;">
           <a class="button" href="https://docs.google.com/spreadsheets/d/1fsgsOklt6WqdPZRK4Y7pgMv6lb--uD1wW_kebcOt1iw/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">
-            Relay Sign Up 
+            Relay Sign Up
           </a>
         </p>
-   <h2>How The Relay Works</h2>
-         <p>
-          Relay team members run, walk, jog, push strollers for 24 continuous hours
-        </p>
-         <p>
-          Participants rotate in and out. Everyone moves at there own pace
+
+        <h2>How The Relay Works</h2>
+        <p>
+          Relay team members run, walk, jog, and push strollers for 24 continuous hours.
         </p>
         <p>
-          During the relay you will be able to watch the mile count add up live, and at the end of the relay the miles will be verified and uploaded to the fund site. The fund site will then automatically add up funds, and they will all be put towards a building for Celebration Caserta.
+          Participants rotate in and out, and everyone moves at their own pace.
         </p>
-          <h2>How You Can Help</h2>
+        <p>
+          During the relay, you will be able to watch the mile count add up live. At the end of the relay, the miles will be verified and uploaded to the fundraising site. The site will then automatically total the funds, and all proceeds will go toward building a new home for Celebration Caserta.
+        </p>
+
+        <h2>How You Can Help</h2>
         <p>
           You can support this mission in a few simple but meaningful ways. First, consider giving—whether it’s a one-time donation or a pledge per mile, every contribution helps us create more space for people to hear the Word and grow in community.
         </p>
@@ -205,49 +268,113 @@
 
     <section class="card" style="margin-top: 24px;">
       <h2>Watch Our Story</h2>
-     <div class="video-wrap">
-  <video controls playsinline>
-    <source src="Relayvideo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-    </section>
-<div class="card">
-        <h2>Why We’re Fundraising</h2>
-  <p style="color: var(--muted);">
-  If you prefer reading, here’s the written version of the story shared in the video above.
-</p>
-        <p>
-          I moved from the US to Naples, Italy about 2 years ago and the biggest question in my head at the time was why am I here in Naples? There was some chaos, driving around I learned there were alot of hand signals, especially in traffic
-
-My family and I didn’t know anyone, and I had a completely new job that I had no experience in. 
-
-None of this made sense, none of this was according to my plan.
-
-My family and I kept coming to Celebration Caserta and week in and week out people from church surrounded us with love here in church and out on in the workplace.
-
-Acquaintances became friends and mentors in our daily lives. 
-
-Then it hit me I’m here to be an active part of the Church. Just as others are pouring into me Sunday and throughout the week.
-
-This totally changed my perspective
-
-It’s not about what job, or title I held, or how being stationed here at Naples was going to impact my career. I am here to serve others at Church and be a light for Him in the workplace. He shifted my selfish perspective to a perspective that focused on that which is eternal.
-
-All because of an open seat surrounded by the active body of Christ. 
-
-Thats just one of the many truths I’ve learned by being a part of Celebration Caserta. I want others to learn and be surrounded by the church as I have here. But we are running out of seats!
-
-So what can you do now?
-
-Join me in the Building Hope Relay where we will do a run and walk relay with each other for 24 hours. Anyone can pledge various amounts per mile or pledge a flat rate, and we will use these funds to build a new home for Celebration Caserta.
-
-From 15 May to 16 May at Carney Park we will run, walk, eat, pray and spend some focused family time together with the purpose to create more room for more chairs so when those who need a seat as we all do, don’t get left to the wayside because there wasn’t room.
-
-You help will impact lives for years to come.
-        </p>
+      <div class="video-wrap">
+        <video controls playsinline>
+          <source src="Relayvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
+
+    <section class="card timeline-section" style="margin-top: 24px;">
+      <h2>Our Story</h2>
+      <p class="timeline-intro">
+        If you prefer reading, here’s the story behind this mission and why this fundraiser matters so much to our family and church community.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>We Moved to Naples</h3>
+            <p>
+              About two years ago, my family and I moved from the United States to Naples, Italy. At the time, I kept asking myself: why am I here in Naples?
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>A Season of Uncertainty</h3>
+            <p>
+              Everything felt unfamiliar. We didn’t know anyone, I had a completely new job with no experience in it, and honestly, none of it made sense. None of this was according to my plan.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Church Welcomed Us</h3>
+            <p>
+              Week after week, people at Celebration Caserta surrounded us with love—both at church and in everyday life. Acquaintances became friends, and friends became mentors.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>A New Perspective</h3>
+            <p>
+              Then it hit me: I’m here to be an active part of the Church. Just as others were pouring into me on Sundays and throughout the week, I was here to serve others too.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>What Truly Matters</h3>
+            <p>
+              My perspective changed. It was no longer about my job, my title, or how being stationed in Naples would impact my career. I am here to serve others at church and be a light for Christ in the workplace.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>An Open Seat Changed Everything</h3>
+            <p>
+              All of this happened because there was an open seat, and because I was surrounded by the active body of Christ. Celebration Caserta has shaped my life in powerful ways, and I want others to experience that too.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Now We’re Running Out of Room</h3>
+            <p>
+              But we are running out of seats. We want to make room for more people to hear the truth, grow in faith, and be surrounded by the church just as I have been.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The Building Hope Relay</h3>
+            <p>
+              That’s why we’re inviting others to join the Building Hope Relay. From 15 May to 16 May at Carney Park, we’ll run, walk, eat, pray, and spend focused family time together for 24 hours to help build a new home for Celebration Caserta.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>How You Can Make a Difference</h3>
+            <p>
+              Your support helps create more room for more chairs, so no one who needs a place to belong is left behind because there wasn’t enough space. Your help will impact lives for years to come.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="footer">
       Thank you for your support and for helping us spread the word.
     </div>
